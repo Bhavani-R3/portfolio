@@ -40,7 +40,6 @@ header nav {
 header nav .menu-btn {
     height: 100%;
     width: 40px;
-    background-color: #1877f2; 
     /* background-image: linear-gradient(to bottom right, #00c0ff, #4218b8); */
     display: flex;
     align-items: center;
@@ -50,6 +49,10 @@ header nav .menu-btn {
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
+}
+
+header nav .menu-btn:hover {
+    background-color: #222;
 }
 
 nav .menu-btn span {
@@ -113,11 +116,11 @@ aside .sticky-menu li:hover {
     text-decoration: none;
 }
 
-.sticky-menu li:nth-child(1) { background-color: #1877f2;}
+.sticky-menu li:nth-child(1) { background-color: #0a66c2;}
 .sticky-menu li:nth-child(2) { background-color: #222;}
 .sticky-menu li:nth-child(3) { background-color: #cd201f;}
 .sticky-menu li:nth-child(4) { background-color: #db3236;}
-.sticky-menu li:nth-child(5) { background-color: #4078c0;}
+.sticky-menu li:nth-child(5) { background-color: #222;}
 
 /* section body css */
 
@@ -132,7 +135,7 @@ aside .sticky-menu li:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('home-bg.jpg');
+    background-image: url('../images/home-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -162,8 +165,12 @@ aside .sticky-menu li:hover {
     padding: 20px;
 }
 
-#about .col h1 {
+#about .col h1,
+#resume .col h1,
+#projects .col h1,
+#contact .col h1 {
     font-size: 2.5em;
+    color: #12486b;
 }
 
 #about .col .content {
@@ -177,9 +184,14 @@ aside .sticky-menu li:hover {
 }
 
 #about .about-card {
+    margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#about .about-card .info {
+    margin-left: 5px;
 }
 
 #about .about-card .image {
@@ -191,7 +203,7 @@ aside .sticky-menu li:hover {
     max-width: 100%;
     border-radius: 20px;
     border: 3px solid #fff;
-    outline: 3px solid #15838b;
+    outline: 3px solid #12486b;
 }
 
 #about ul li {
@@ -213,9 +225,14 @@ aside .sticky-menu li:hover {
 }
 
 #about .tech-card {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#about .tech-card ul li {
+    margin: 10px;
 }
 
 #about .tech-card a {
@@ -272,6 +289,32 @@ th {
     padding: 10px;
 }
 
+#resume .col .download-btn {
+    width: 100%;
+    text-align: center;
+}
+
+#resume .col .download-btn ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+#resume .col .download-btn ul li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#resume .col .download-btn ul a {
+    align-self: center;
+    text-decoration: none;
+    background-color: #12486b; 
+    color: #fff;
+    padding: 12px 14px;
+}
+
 /* Projects */
 #projects {
     width: 100%;
@@ -320,7 +363,7 @@ th {
 }
 
 #projects .col .card-container .card .card-image {
-    width: 250px;
+    width: 320px;
     height: 250px;
     object-fit: cover;
     object-position: center;
@@ -441,3 +484,6 @@ footer {
 }
 
 
+footer strong {
+    color: #12486b;
+}

@@ -63,6 +63,17 @@
         flex-direction: column;
     }
 
+    #about .about-card {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #about .tech-card {
+        margin-top: 0px;
+    } 
+
     /* resume section */
     #resume {
         display: flex;
